@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Entities", "CapaEntidad\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Bussiness", "CapaNegocio\3. Bussiness.csproj", "{67EDEBF2-0F1B-4F3E-A7ED-F9D2251477A4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Presentation", "CapaPresentation\2. Presentation.csproj", "{4FD21095-1C81-45C1-B92D-DA4D9BDADBC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "CapaPresentation\Presentation.csproj", "{4FD21095-1C81-45C1-B92D-DA4D9BDADBC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

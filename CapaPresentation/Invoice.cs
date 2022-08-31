@@ -21,5 +21,10 @@ namespace PresentationLayer
         {
 
         }
+
+        private void frmInvoice_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -214,6 +214,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmInvoice";
             this.Text = "Invoice";
+            this.Load += new System.EventHandler(this.frmInvoice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

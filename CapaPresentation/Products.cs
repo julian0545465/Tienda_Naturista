@@ -82,7 +82,21 @@ namespace PresentationLayer
                 products.Quantity = int.Parse(txtQuantity.Text);
                 bool login = productsBussiness.InsertProduct(products);
 
+                if (login)
+                {
+                    MessageBox.Show("Registro Guardado");
+                }
+                else
+                {
+                    MessageBox.Show("Registro no Guardado");
+                }
+
             }
+        }
+
+        private void txtQuantity_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

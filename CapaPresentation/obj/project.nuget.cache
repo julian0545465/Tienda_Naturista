@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yLxXrm/byGEELaeyhw+8/RJk1eNVJfiKMm9byRVBAsrfF++yABj1KFS0h5hiDC5VG0oxASivOu2fbOcK85QoXg==",
+  "dgSpecHash": "imDXG6uKLozCTXTH2Bej6dfZOSEhrW+g0ZKJChWdwg/7R37rLsCSb9jFP2Z0ONzkydgBWtOHZjoOTNfOMZJhgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaPresentation\\2. Presentation.csproj",
+  "projectFilePath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaPresentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nicolas Velasco\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\Nicolas Velasco\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",

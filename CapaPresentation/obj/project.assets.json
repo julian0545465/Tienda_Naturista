@@ -911,9 +911,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaPresentation\\2. Presentation.csproj",
-      "projectName": "2. Presentation",
-      "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaPresentation\\2. Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaPresentation\\Presentation.csproj",
+      "projectName": "Presentation",
+      "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaPresentation\\Presentation.csproj",
       "packagesPath": "C:\\Users\\Nicolas Velasco\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaPresentation\\obj\\",
       "projectStyle": "PackageReference",

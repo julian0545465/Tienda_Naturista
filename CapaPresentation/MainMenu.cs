@@ -36,6 +36,9 @@ namespace Presentation
             frminventory.ShowDialog();
         }
 
-       
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
