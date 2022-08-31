@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj" />
-    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj" />
+    <ProjectReference Include="..\CapaDatos\4. DataAccess.csproj" />
+    <ProjectReference Include="..\CapaEntidad\1. Entities.csproj" />
   </ItemGroup>
 
 </Project>

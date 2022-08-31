@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaNegocio\\CapaNegocio.csproj": {}
+    "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaNegocio\\CapaNegocio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\CapaDatos.csproj",
-        "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\CapaDatos.csproj",
+        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\Nicolas Velasco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\obj\\",
+        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nicolas Velasco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj": {
-                "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj"
+              "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\EntityLayer.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj": {
+    "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj",
-        "projectName": "CapaEntidad",
-        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj",
+        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\EntityLayer.csproj",
+        "projectName": "EntityLayer",
+        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\Nicolas Velasco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\obj\\",
+        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nicolas Velasco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -122,14 +122,14 @@
         }
       }
     },
-    "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaNegocio\\CapaNegocio.csproj": {
+    "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaNegocio\\CapaNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaNegocio\\CapaNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaNegocio\\CapaNegocio.csproj",
         "projectName": "CapaNegocio",
-        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaNegocio\\CapaNegocio.csproj",
+        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaNegocio\\CapaNegocio.csproj",
         "packagesPath": "C:\\Users\\Nicolas Velasco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaNegocio\\obj\\",
+        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nicolas Velasco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,11 +146,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\CapaDatos.csproj": {
-                "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\CapaDatos.csproj"
+              "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\DataLayer.csproj"
               },
-              "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj": {
-                "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj"
+              "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\EntityLayer.csproj"
               }
             }
           }

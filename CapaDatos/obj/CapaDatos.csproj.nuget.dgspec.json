@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\CapaDatos.csproj": {}
+    "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\CapaDatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\CapaDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\CapaDatos.csproj",
+        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\CapaDatos.csproj",
         "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\CapaDatos.csproj",
+        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\CapaDatos.csproj",
         "packagesPath": "C:\\Users\\Nicolas Velasco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaDatos\\obj\\",
+        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaDatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nicolas Velasco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj": {
-                "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj"
+              "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\CapaEntidad.csproj": {
+                "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\CapaEntidad.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj": {
+    "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\CapaEntidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj",
+        "projectUniqueName": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\CapaEntidad.csproj",
         "projectName": "CapaEntidad",
-        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\CapaEntidad.csproj",
+        "projectPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\CapaEntidad.csproj",
         "packagesPath": "C:\\Users\\Nicolas Velasco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\PROYECTO\\Solution1\\CapaEntidad\\obj\\",
+        "outputPath": "C:\\Users\\Nicolas Velasco\\Documentos\\GitHub\\Tienda_Naturista\\CapaEntidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nicolas Velasco\\AppData\\Roaming\\NuGet\\NuGet.Config",
