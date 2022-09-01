@@ -43,8 +43,6 @@ namespace Presentation
 
                 if (login)
                 {
-                
-
                     MainMenu menu = new MainMenu();
                     menu.ShowDialog();
                     this.Close();

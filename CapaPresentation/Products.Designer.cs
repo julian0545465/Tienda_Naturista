@@ -89,10 +89,10 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.menuStrip1);
-            this.groupBox1.Controls.Add(this.pnlDelete);
             this.groupBox1.Controls.Add(this.pnlModify);
             this.groupBox1.Controls.Add(this.pnlConsultProduct);
             this.groupBox1.Controls.Add(this.pnlInsert);
+            this.groupBox1.Controls.Add(this.pnlDelete);
             this.groupBox1.Location = new System.Drawing.Point(12, 131);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(782, 360);
@@ -170,6 +170,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(263, 23);
             this.comboBox1.TabIndex = 16;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtValueM
             // 
@@ -177,6 +178,7 @@
             this.txtValueM.Name = "txtValueM";
             this.txtValueM.Size = new System.Drawing.Size(192, 23);
             this.txtValueM.TabIndex = 15;
+            this.txtValueM.TextChanged += new System.EventHandler(this.txtValueM_TextChanged);
             // 
             // txtDescriptionM
             // 
@@ -430,6 +432,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(263, 23);
             this.comboBox2.TabIndex = 17;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // btnDeleteE
             // 

@@ -14,6 +14,7 @@ namespace Bussiness
 
         public bool SelectEmployee(Employee employee)
         {
+            
             connection.Open();
             DataSet data = new DataSet();
             data = connection.Consult($"SELECT * FROM scrip.employee WHERE USER='{employee.User}' AND PASSWORD='{employee.Password}';");

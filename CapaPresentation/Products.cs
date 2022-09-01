@@ -233,5 +233,7 @@ namespace PresentationLayer
                 MessageBox.Show("Registro no Eliminado");
             }
         }
+
+       
     }
 }
