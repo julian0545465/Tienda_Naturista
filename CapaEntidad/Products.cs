@@ -9,7 +9,7 @@ namespace Entities
     public class Products
     {
         public int Code { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         public int Value { get; set; }
         public int Quantity { get; set; }

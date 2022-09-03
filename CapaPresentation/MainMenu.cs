@@ -36,9 +36,10 @@ namespace Presentation
             frminventory.ShowDialog();
         }
 
-        private void MainMenu_Load(object sender, EventArgs e)
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmClient frmclient = new frmClient();
+            frmclient.ShowDialog();
         }
     }
 }

@@ -74,6 +74,7 @@
             this.btnConsultarI.TabIndex = 14;
             this.btnConsultarI.Text = "Consultar";
             this.btnConsultarI.UseVisualStyleBackColor = true;
+            this.btnConsultarI.Click += new System.EventHandler(this.btnConsultarI_Click);
             // 
             // dataGridView1
             // 
