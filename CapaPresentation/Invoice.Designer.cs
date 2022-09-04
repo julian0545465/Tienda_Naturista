@@ -134,7 +134,7 @@
             this.txtClientF.FormattingEnabled = true;
             this.txtClientF.Location = new System.Drawing.Point(213, 135);
             this.txtClientF.Name = "txtClientF";
-            this.txtClientF.Size = new System.Drawing.Size(191, 23);
+            this.txtClientF.Size = new System.Drawing.Size(498, 23);
             this.txtClientF.TabIndex = 11;
             // 
             // txtProductF
@@ -148,7 +148,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.Location = new System.Drawing.Point(522, 158);
+            this.btnAdd.Location = new System.Drawing.Point(528, 218);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(173, 25);
             this.btnAdd.TabIndex = 13;

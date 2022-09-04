@@ -66,10 +66,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlConsultClient = new System.Windows.Forms.Panel();
-            this.comboBoxConsult = new System.Windows.Forms.ComboBox();
+            this.dataGridViewCli = new System.Windows.Forms.DataGridView();
+            this.txtSearchC = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btnConsultCliC = new System.Windows.Forms.Button();
-            this.dataGridViewCli = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pnlDeleteCli.SuspendLayout();
@@ -92,10 +92,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.menuStrip1);
-            this.groupBox1.Controls.Add(this.pnlConsultClient);
-            this.groupBox1.Controls.Add(this.pnlDeleteCli);
             this.groupBox1.Controls.Add(this.pnlModifyClient);
             this.groupBox1.Controls.Add(this.pnlInsertClient);
+            this.groupBox1.Controls.Add(this.pnlConsultClient);
+            this.groupBox1.Controls.Add(this.pnlDeleteCli);
             this.groupBox1.Location = new System.Drawing.Point(25, 84);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(775, 365);
@@ -231,6 +231,7 @@
             this.btnSaveChangeCliM.TabIndex = 22;
             this.btnSaveChangeCliM.Text = "Guardar Cambios";
             this.btnSaveChangeCliM.UseVisualStyleBackColor = true;
+            this.btnSaveChangeCliM.Click += new System.EventHandler(this.btnSaveChangeCliM_Click);
             // 
             // txtNumberphoneCliM
             // 
@@ -310,6 +311,7 @@
             this.btnConsultCliM.TabIndex = 18;
             this.btnConsultCliM.Text = "Consultar";
             this.btnConsultCliM.UseVisualStyleBackColor = true;
+            this.btnConsultCliM.Click += new System.EventHandler(this.btnConsultCliM_Click);
             // 
             // pnlInsertClient
             // 
@@ -356,6 +358,7 @@
             this.btnCleanCli.TabIndex = 18;
             this.btnCleanCli.Text = "Limpiar";
             this.btnCleanCli.UseVisualStyleBackColor = true;
+            this.btnCleanCli.Click += new System.EventHandler(this.btnCleanCli_Click);
             // 
             // btnSaveCli
             // 
@@ -366,6 +369,7 @@
             this.btnSaveCli.TabIndex = 17;
             this.btnSaveCli.Text = "Guardar";
             this.btnSaveCli.UseVisualStyleBackColor = true;
+            this.btnSaveCli.Click += new System.EventHandler(this.btnSaveCli_Click);
             // 
             // txtNumberphone
             // 
@@ -438,7 +442,7 @@
             // pnlConsultClient
             // 
             this.pnlConsultClient.Controls.Add(this.dataGridViewCli);
-            this.pnlConsultClient.Controls.Add(this.comboBoxConsult);
+            this.pnlConsultClient.Controls.Add(this.txtSearchC);
             this.pnlConsultClient.Controls.Add(this.label11);
             this.pnlConsultClient.Controls.Add(this.btnConsultCliC);
             this.pnlConsultClient.Location = new System.Drawing.Point(14, 50);
@@ -446,13 +450,22 @@
             this.pnlConsultClient.Size = new System.Drawing.Size(746, 318);
             this.pnlConsultClient.TabIndex = 36;
             // 
-            // comboBoxConsult
+            // dataGridViewCli
             // 
-            this.comboBoxConsult.FormattingEnabled = true;
-            this.comboBoxConsult.Location = new System.Drawing.Point(275, 13);
-            this.comboBoxConsult.Name = "comboBoxConsult";
-            this.comboBoxConsult.Size = new System.Drawing.Size(263, 23);
-            this.comboBoxConsult.TabIndex = 26;
+            this.dataGridViewCli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCli.Location = new System.Drawing.Point(74, 124);
+            this.dataGridViewCli.Name = "dataGridViewCli";
+            this.dataGridViewCli.RowTemplate.Height = 25;
+            this.dataGridViewCli.Size = new System.Drawing.Size(606, 90);
+            this.dataGridViewCli.TabIndex = 27;
+            // 
+            // txtSearchC
+            // 
+            this.txtSearchC.FormattingEnabled = true;
+            this.txtSearchC.Location = new System.Drawing.Point(275, 13);
+            this.txtSearchC.Name = "txtSearchC";
+            this.txtSearchC.Size = new System.Drawing.Size(263, 23);
+            this.txtSearchC.TabIndex = 26;
             // 
             // label11
             // 
@@ -473,15 +486,7 @@
             this.btnConsultCliC.TabIndex = 18;
             this.btnConsultCliC.Text = "Consultar";
             this.btnConsultCliC.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewCli
-            // 
-            this.dataGridViewCli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCli.Location = new System.Drawing.Point(74, 124);
-            this.dataGridViewCli.Name = "dataGridViewCli";
-            this.dataGridViewCli.RowTemplate.Height = 25;
-            this.dataGridViewCli.Size = new System.Drawing.Size(606, 90);
-            this.dataGridViewCli.TabIndex = 27;
+            this.btnConsultCliC.Click += new System.EventHandler(this.btnConsultCliC_Click);
             // 
             // frmClient
             // 
@@ -552,7 +557,7 @@
         private Button txtDeleteCli;
         private Panel pnlConsultClient;
         private DataGridView dataGridViewCli;
-        private ComboBox comboBoxConsult;
+        private ComboBox txtSearchC;
         private Label label11;
         private Button btnConsultCliC;
     }

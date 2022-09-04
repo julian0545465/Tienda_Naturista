@@ -22,7 +22,7 @@ namespace DataAccess
             }
             catch (Exception ex)
             {
-                MessageBox.Show("La conexión no fue exitosa.");
+                MessageBox.Show("La conexión no fue exitosa." + ex.Message);
                 return false;
             }
         }
@@ -36,7 +36,7 @@ namespace DataAccess
             }
             catch (Exception ex)
             {
-                MessageBox.Show("La conexión no se pudo cerrar.");
+                MessageBox.Show("La conexión no se pudo cerrar." + ex.Message);
                 return false;
             }
         }
@@ -53,7 +53,7 @@ namespace DataAccess
             }
             catch (Exception ex)
             {
-                MessageBox.Show("El query no se ejecuto.");
+                MessageBox.Show("El query no se ejecuto." + ex.Message);
                 return false;
             }
         }
@@ -71,7 +71,7 @@ namespace DataAccess
             }
             catch (Exception ex)
             {
-                MessageBox.Show("El select no se ejecuto.");
+                MessageBox.Show("El select no se ejecuto." + ex.Message);
                 return dataSet;
             }
         }

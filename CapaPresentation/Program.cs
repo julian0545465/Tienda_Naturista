@@ -1,5 +1,3 @@
-
-
 namespace Presentation
 {
     internal static class Program

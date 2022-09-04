@@ -35,10 +35,6 @@
             this.consultarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlDelete = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btnDeleteE = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.pnlModify = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtValueM = new System.Windows.Forms.TextBox();
@@ -66,13 +62,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnlDelete = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.btnDeleteE = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.pnlDelete.SuspendLayout();
             this.pnlModify.SuspendLayout();
             this.pnlConsultProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlInsert.SuspendLayout();
+            this.pnlDelete.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -89,10 +89,10 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.menuStrip1);
+            this.groupBox1.Controls.Add(this.pnlModify);
             this.groupBox1.Controls.Add(this.pnlConsultProduct);
             this.groupBox1.Controls.Add(this.pnlInsert);
             this.groupBox1.Controls.Add(this.pnlDelete);
-            this.groupBox1.Controls.Add(this.pnlModify);
             this.groupBox1.Location = new System.Drawing.Point(12, 131);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(782, 360);
@@ -144,46 +144,6 @@
             this.eliminarProductoToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.eliminarProductoToolStripMenuItem.Text = "Eliminar Producto";
             this.eliminarProductoToolStripMenuItem.Click += new System.EventHandler(this.eliminarProductoToolStripMenuItem_Click);
-            // 
-            // pnlDelete
-            // 
-            this.pnlDelete.Controls.Add(this.comboBox2);
-            this.pnlDelete.Controls.Add(this.btnDeleteE);
-            this.pnlDelete.Controls.Add(this.label14);
-            this.pnlDelete.Location = new System.Drawing.Point(19, 50);
-            this.pnlDelete.Name = "pnlDelete";
-            this.pnlDelete.Size = new System.Drawing.Size(719, 298);
-            this.pnlDelete.TabIndex = 16;
-            this.pnlDelete.Visible = false;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(240, 16);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(263, 23);
-            this.comboBox2.TabIndex = 17;
-            // 
-            // btnDeleteE
-            // 
-            this.btnDeleteE.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDeleteE.Location = new System.Drawing.Point(297, 55);
-            this.btnDeleteE.Name = "btnDeleteE";
-            this.btnDeleteE.Size = new System.Drawing.Size(84, 38);
-            this.btnDeleteE.TabIndex = 8;
-            this.btnDeleteE.Text = "Eliminar";
-            this.btnDeleteE.UseVisualStyleBackColor = true;
-            this.btnDeleteE.Click += new System.EventHandler(this.btnDeleteE_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(153, 16);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 20);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Producto:";
             // 
             // pnlModify
             // 
@@ -452,6 +412,46 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Codigo:";
             // 
+            // pnlDelete
+            // 
+            this.pnlDelete.Controls.Add(this.comboBox2);
+            this.pnlDelete.Controls.Add(this.btnDeleteE);
+            this.pnlDelete.Controls.Add(this.label14);
+            this.pnlDelete.Location = new System.Drawing.Point(19, 50);
+            this.pnlDelete.Name = "pnlDelete";
+            this.pnlDelete.Size = new System.Drawing.Size(719, 298);
+            this.pnlDelete.TabIndex = 16;
+            this.pnlDelete.Visible = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(240, 16);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(263, 23);
+            this.comboBox2.TabIndex = 17;
+            // 
+            // btnDeleteE
+            // 
+            this.btnDeleteE.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDeleteE.Location = new System.Drawing.Point(297, 55);
+            this.btnDeleteE.Name = "btnDeleteE";
+            this.btnDeleteE.Size = new System.Drawing.Size(84, 38);
+            this.btnDeleteE.TabIndex = 8;
+            this.btnDeleteE.Text = "Eliminar";
+            this.btnDeleteE.UseVisualStyleBackColor = true;
+            this.btnDeleteE.Click += new System.EventHandler(this.btnDeleteE_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(153, 16);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(72, 20);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Producto:";
+            // 
             // frmProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -466,8 +466,6 @@
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.pnlDelete.ResumeLayout(false);
-            this.pnlDelete.PerformLayout();
             this.pnlModify.ResumeLayout(false);
             this.pnlModify.PerformLayout();
             this.pnlConsultProduct.ResumeLayout(false);
@@ -475,6 +473,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnlInsert.ResumeLayout(false);
             this.pnlInsert.PerformLayout();
+            this.pnlDelete.ResumeLayout(false);
+            this.pnlDelete.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -504,7 +504,13 @@
         private ToolStripMenuItem eliminarProductoToolStripMenuItem;
         private Button btnConsult;
         private DataGridView dataGridView1;
+        private Panel pnlDelete;
+        private Button btnDeleteE;
+        private Label label14;
+        private ComboBox txtSearchP;
+        private ComboBox comboBox2;
         private Panel pnlModify;
+        private ComboBox comboBox1;
         private TextBox txtValueM;
         private TextBox txtDescriptionM;
         private TextBox txtCantidadM;
@@ -514,11 +520,5 @@
         private Label label7;
         private Button btnConsultM;
         private Label label6;
-        private Panel pnlDelete;
-        private Button btnDeleteE;
-        private Label label14;
-        private ComboBox txtSearchP;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
     }
 }

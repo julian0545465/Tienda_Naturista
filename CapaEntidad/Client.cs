@@ -12,6 +12,6 @@ namespace Entities
         public string? Name { get; set; }
         public string? Address { get; set; }
         public int Numberphone { get; set; }
-        public int Email { get; set; }
+        public string? Email { get; set; }
     }
 }

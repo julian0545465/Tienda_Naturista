@@ -2,6 +2,7 @@
 using Entities;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,31 +16,36 @@ namespace Bussiness
         {
             connection = new Connection();
         }
-        public bool InsertProduct(Client client)
+        public bool InsertClient(Client client)
         {
 
             connection.Open();
-            bool state = connection.Execute($"INSERT INTO `scrip`.`client`(`Code`,`Description`,`Value`,`Quantity`)VALUES({client.Document}, '{client.Name}', {client.Address}, {client.Numberphone}, {client.Email});");
+            bool state = connection.Execute($"INSERT INTO `scrip`.`client`(`Document`,`Name`,`Address`,`Numberphone`, `Email`)VALUES('{client.Document}', '{client.Name}', '{client.Address}', '{client.Numberphone}', '{client.Email}');");
             connection.Close();
             return state;
+            
 
         }
 
-        public bool UpdateProduct(Products products)
+        public bool UpdateClient(Client client)
         {
 
             connection.Open();
-            bool state = connection.Execute($"update `scrip`.`products` set Quantity={products.Quantity},Description='{products.Description}',Value={products.Value} WHERE CODE= {products.Code};");
+            bool state = connection.Execute($"update `scrip`.`client` set Document='{client.Document}',Name='{client.Name}',Address='{client.Address}',Numberphone='{client.Numberphone}',Email='{client.Email}' WHERE DOCUMENT= {client.Document};");
             connection.Close();
             return state;
-
+            //UPDATE `scrip`.`client` SET `Document` = '12', `Name` = 'dff', `Address` = 'bfvf', `Numberphone` = '12343', `Email` = 'weaffsf' WHERE(`Document` = '12');
         }
+        //($"update `scrip`.`client` set Name={client.Name},Address='{client.Address}',Numberphone='{client.Numberphone}', '{client.Email}', WHERE DOCUMENT= {client.Document};");
+         
 
-        public bool DeleteProduct(int code)
+        
+
+        public bool DeleteClient(int document)
         {
 
             connection.Open();
-            bool state = connection.Execute($"delete FROM`scrip`.`products` WHERE CODE= {code};");
+            bool state = connection.Execute($"delete FROM`scrip`.`client` WHERE DOCUMENT= {document};");
             connection.Close();
             return state;
 
@@ -49,17 +55,17 @@ namespace Bussiness
         {
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.products;");
+            data = connection.Consult($"SELECT * FROM scrip.client;");
             connection.Close();
             return data;
 
         }
 
-        public DataSet GetDataProduct(int code)
+        public DataSet GetDataClient(int document)
         {
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.products WHERE CODE = {code};");
+            data = connection.Consult($"SELECT * FROM scrip.client WHERE DOCUMENT = {document};");
             connection.Close();
             return data;
 
