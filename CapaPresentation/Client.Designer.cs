@@ -185,6 +185,7 @@
             this.txtDeleteCli.TabIndex = 18;
             this.txtDeleteCli.Text = "Eliminar";
             this.txtDeleteCli.UseVisualStyleBackColor = true;
+            this.txtDeleteCli.Click += new System.EventHandler(this.txtDeleteCli_Click);
             // 
             // pnlModifyClient
             // 

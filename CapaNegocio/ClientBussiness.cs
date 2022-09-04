@@ -34,12 +34,8 @@ namespace Bussiness
             bool state = connection.Execute($"update `scrip`.`client` set Document='{client.Document}',Name='{client.Name}',Address='{client.Address}',Numberphone='{client.Numberphone}',Email='{client.Email}' WHERE DOCUMENT= {client.Document};");
             connection.Close();
             return state;
-            //UPDATE `scrip`.`client` SET `Document` = '12', `Name` = 'dff', `Address` = 'bfvf', `Numberphone` = '12343', `Email` = 'weaffsf' WHERE(`Document` = '12');
+           
         }
-        //($"update `scrip`.`client` set Name={client.Name},Address='{client.Address}',Numberphone='{client.Numberphone}', '{client.Email}', WHERE DOCUMENT= {client.Document};");
-         
-
-        
 
         public bool DeleteClient(int document)
         {
@@ -48,6 +44,7 @@ namespace Bussiness
             bool state = connection.Execute($"delete FROM`scrip`.`client` WHERE DOCUMENT= {document};");
             connection.Close();
             return state;
+            //DELETE FROM `scrip`.`client` WHERE(`Document` = '12');
 
         }
 

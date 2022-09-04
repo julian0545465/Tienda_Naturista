@@ -216,7 +216,7 @@ namespace PresentationLayer
 
         private void btnDeleteE_Click(object sender, EventArgs e)
         {
-            Products product = new Products();
+           
             int selectedIndex = comboBox1.SelectedIndex;
             var productSelected = products.Tables[0].Rows[selectedIndex];
 

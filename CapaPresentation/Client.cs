@@ -196,9 +196,9 @@ namespace Presentation
                 clients.Address = txtAddressCliM.Text;
                 clients.Numberphone = int.Parse(txtNumberphoneCliM.Text);
                 clients.Email = txtEmailCliM.Text;
-                bool update = clientBussiness.UpdateClient(clients);
+                bool updateclient = clientBussiness.UpdateClient(clients);
 
-                if (update)
+                if (updateclient)
                 {
                     MessageBox.Show("Registro Actualizado");
                     LoadModificarConmbo();
@@ -211,6 +211,28 @@ namespace Presentation
                 {
                     MessageBox.Show("Registro no Actualizado");
                 }
+            }
+        }
+
+        private void txtDeleteCli_Click(object sender, EventArgs e)
+        {
+            
+
+            Client clients = new Client();
+            int selectedIndex = comboBoxModify.SelectedIndex;
+            var clientSelected = client.Tables[0].Rows[selectedIndex];
+
+
+            bool removeclient = clientBussiness.DeleteClient(int.Parse(clientSelected["Document"].ToString()));
+
+            if (removeclient)
+            {
+                loadComboDelete();
+                MessageBox.Show("Registro Eliminado");
+            }
+            else
+            {
+                MessageBox.Show("Registro no Eliminado");
             }
         }
     }
