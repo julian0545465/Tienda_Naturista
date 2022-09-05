@@ -36,9 +36,9 @@
             this.modificarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlDeleteCli = new System.Windows.Forms.Panel();
+            this.btnDeleteC = new System.Windows.Forms.Button();
             this.comboBoxDelete = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtDeleteCli = new System.Windows.Forms.Button();
             this.pnlModifyClient = new System.Windows.Forms.Panel();
             this.txtEmailCliM = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -92,10 +92,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.menuStrip1);
+            this.groupBox1.Controls.Add(this.pnlDeleteCli);
             this.groupBox1.Controls.Add(this.pnlModifyClient);
             this.groupBox1.Controls.Add(this.pnlInsertClient);
             this.groupBox1.Controls.Add(this.pnlConsultClient);
-            this.groupBox1.Controls.Add(this.pnlDeleteCli);
             this.groupBox1.Location = new System.Drawing.Point(25, 84);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(775, 365);
@@ -150,13 +150,24 @@
             // 
             // pnlDeleteCli
             // 
+            this.pnlDeleteCli.Controls.Add(this.btnDeleteC);
             this.pnlDeleteCli.Controls.Add(this.comboBoxDelete);
             this.pnlDeleteCli.Controls.Add(this.label16);
-            this.pnlDeleteCli.Controls.Add(this.txtDeleteCli);
             this.pnlDeleteCli.Location = new System.Drawing.Point(17, 50);
             this.pnlDeleteCli.Name = "pnlDeleteCli";
             this.pnlDeleteCli.Size = new System.Drawing.Size(746, 318);
             this.pnlDeleteCli.TabIndex = 35;
+            // 
+            // btnDeleteC
+            // 
+            this.btnDeleteC.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDeleteC.Location = new System.Drawing.Point(276, 60);
+            this.btnDeleteC.Name = "btnDeleteC";
+            this.btnDeleteC.Size = new System.Drawing.Size(84, 37);
+            this.btnDeleteC.TabIndex = 27;
+            this.btnDeleteC.Text = "Eliminar";
+            this.btnDeleteC.UseVisualStyleBackColor = true;
+            this.btnDeleteC.Click += new System.EventHandler(this.btnDeleteC_Click);
             // 
             // comboBoxDelete
             // 
@@ -175,17 +186,6 @@
             this.label16.Size = new System.Drawing.Size(55, 20);
             this.label16.TabIndex = 17;
             this.label16.Text = "Cliente";
-            // 
-            // txtDeleteCli
-            // 
-            this.txtDeleteCli.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDeleteCli.Location = new System.Drawing.Point(318, 50);
-            this.txtDeleteCli.Name = "txtDeleteCli";
-            this.txtDeleteCli.Size = new System.Drawing.Size(84, 38);
-            this.txtDeleteCli.TabIndex = 18;
-            this.txtDeleteCli.Text = "Eliminar";
-            this.txtDeleteCli.UseVisualStyleBackColor = true;
-            this.txtDeleteCli.Click += new System.EventHandler(this.txtDeleteCli_Click);
             // 
             // pnlModifyClient
             // 
@@ -555,11 +555,11 @@
         private Panel pnlDeleteCli;
         private ComboBox comboBoxDelete;
         private Label label16;
-        private Button txtDeleteCli;
         private Panel pnlConsultClient;
         private DataGridView dataGridViewCli;
         private ComboBox txtSearchC;
         private Label label11;
         private Button btnConsultCliC;
+        private Button btnDeleteC;
     }
 }

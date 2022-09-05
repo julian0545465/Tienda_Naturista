@@ -20,6 +20,12 @@ namespace Presentation
         {
             InitializeComponent();
             clientBussiness = new ClientBussiness();
+
+            pnlInsertClient.Visible = false;
+            pnlConsultClient.Visible = false;
+            pnlModifyClient.Visible = false;
+            pnlDeleteCli.Visible = false;
+
         }
 
 
@@ -70,6 +76,7 @@ namespace Presentation
             pnlConsultClient.Visible = false;
             pnlModifyClient.Visible = false;
             pnlDeleteCli.Visible = true;
+            loadComboDelete();
         }
         public void loadComboDelete()
         {
@@ -201,6 +208,7 @@ namespace Presentation
                 if (updateclient)
                 {
                     MessageBox.Show("Registro Actualizado");
+                    
                     LoadModificarConmbo();
                     txtNameCliM.Text = String.Empty;
                     txtAddressCliM.Text = String.Empty;
@@ -214,14 +222,12 @@ namespace Presentation
             }
         }
 
-        private void txtDeleteCli_Click(object sender, EventArgs e)
-        {
-            
 
+        private void btnDeleteC_Click(object sender, EventArgs e)
+        {
             Client clients = new Client();
             int selectedIndex = comboBoxModify.SelectedIndex;
             var clientSelected = client.Tables[0].Rows[selectedIndex];
-
 
             bool removeclient = clientBussiness.DeleteClient(int.Parse(clientSelected["Document"].ToString()));
 
@@ -235,5 +241,7 @@ namespace Presentation
                 MessageBox.Show("Registro no Eliminado");
             }
         }
+
     }
 }
+

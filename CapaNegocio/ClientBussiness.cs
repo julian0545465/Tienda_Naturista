@@ -41,7 +41,7 @@ namespace Bussiness
         {
 
             connection.Open();
-            bool state = connection.Execute($"delete FROM`scrip`.`client` WHERE DOCUMENT= {document};");
+            bool state = connection.Execute($"delete FROM`scrip`.`client` WHERE DOCUMENT= '{document}';");
             connection.Close();
             return state;
             //DELETE FROM `scrip`.`client` WHERE(`Document` = '12');
@@ -62,7 +62,7 @@ namespace Bussiness
         {
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.client WHERE DOCUMENT = {document};");
+            data = connection.Consult($"SELECT * FROM scrip.client WHERE DOCUMENT = '{document}';");
             connection.Close();
             return data;
 
