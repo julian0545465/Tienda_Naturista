@@ -35,6 +35,21 @@
             this.consultarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlDelete = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.btnDeleteE = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pnlModify = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtValueM = new System.Windows.Forms.TextBox();
+            this.txtDescriptionM = new System.Windows.Forms.TextBox();
+            this.txtCantidadM = new System.Windows.Forms.TextBox();
+            this.btnSaveChange = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnConsultM = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.pnlConsultProduct = new System.Windows.Forms.Panel();
             this.txtSearchP = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -51,28 +66,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pnlDelete = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btnDeleteE = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.pnlModify = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.txtValueM = new System.Windows.Forms.TextBox();
-            this.txtDescriptionM = new System.Windows.Forms.TextBox();
-            this.txtCantidadM = new System.Windows.Forms.TextBox();
-            this.btnSaveChange = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnConsultM = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.pnlDelete.SuspendLayout();
+            this.pnlModify.SuspendLayout();
             this.pnlConsultProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlInsert.SuspendLayout();
-            this.pnlDelete.SuspendLayout();
-            this.pnlModify.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -89,10 +89,10 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.menuStrip1);
-            this.groupBox1.Controls.Add(this.pnlDelete);
-            this.groupBox1.Controls.Add(this.pnlModify);
             this.groupBox1.Controls.Add(this.pnlConsultProduct);
             this.groupBox1.Controls.Add(this.pnlInsert);
+            this.groupBox1.Controls.Add(this.pnlDelete);
+            this.groupBox1.Controls.Add(this.pnlModify);
             this.groupBox1.Location = new System.Drawing.Point(12, 131);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(782, 360);
@@ -144,6 +144,155 @@
             this.eliminarProductoToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.eliminarProductoToolStripMenuItem.Text = "Eliminar Producto";
             this.eliminarProductoToolStripMenuItem.Click += new System.EventHandler(this.eliminarProductoToolStripMenuItem_Click);
+            // 
+            // pnlDelete
+            // 
+            this.pnlDelete.Controls.Add(this.comboBox2);
+            this.pnlDelete.Controls.Add(this.btnDeleteE);
+            this.pnlDelete.Controls.Add(this.label14);
+            this.pnlDelete.Location = new System.Drawing.Point(19, 50);
+            this.pnlDelete.Name = "pnlDelete";
+            this.pnlDelete.Size = new System.Drawing.Size(719, 298);
+            this.pnlDelete.TabIndex = 16;
+            this.pnlDelete.Visible = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(240, 16);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(263, 23);
+            this.comboBox2.TabIndex = 17;
+            // 
+            // btnDeleteE
+            // 
+            this.btnDeleteE.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDeleteE.Location = new System.Drawing.Point(297, 55);
+            this.btnDeleteE.Name = "btnDeleteE";
+            this.btnDeleteE.Size = new System.Drawing.Size(84, 38);
+            this.btnDeleteE.TabIndex = 8;
+            this.btnDeleteE.Text = "Eliminar";
+            this.btnDeleteE.UseVisualStyleBackColor = true;
+            this.btnDeleteE.Click += new System.EventHandler(this.btnDeleteE_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(153, 16);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(72, 20);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Producto:";
+            // 
+            // pnlModify
+            // 
+            this.pnlModify.Controls.Add(this.comboBox1);
+            this.pnlModify.Controls.Add(this.txtValueM);
+            this.pnlModify.Controls.Add(this.txtDescriptionM);
+            this.pnlModify.Controls.Add(this.txtCantidadM);
+            this.pnlModify.Controls.Add(this.btnSaveChange);
+            this.pnlModify.Controls.Add(this.label10);
+            this.pnlModify.Controls.Add(this.label8);
+            this.pnlModify.Controls.Add(this.label7);
+            this.pnlModify.Controls.Add(this.btnConsultM);
+            this.pnlModify.Controls.Add(this.label6);
+            this.pnlModify.Location = new System.Drawing.Point(19, 50);
+            this.pnlModify.Name = "pnlModify";
+            this.pnlModify.Size = new System.Drawing.Size(719, 298);
+            this.pnlModify.TabIndex = 10;
+            this.pnlModify.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(267, 12);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(263, 23);
+            this.comboBox1.TabIndex = 16;
+            // 
+            // txtValueM
+            // 
+            this.txtValueM.Location = new System.Drawing.Point(311, 153);
+            this.txtValueM.Name = "txtValueM";
+            this.txtValueM.Size = new System.Drawing.Size(192, 23);
+            this.txtValueM.TabIndex = 15;
+            // 
+            // txtDescriptionM
+            // 
+            this.txtDescriptionM.Location = new System.Drawing.Point(311, 118);
+            this.txtDescriptionM.Name = "txtDescriptionM";
+            this.txtDescriptionM.Size = new System.Drawing.Size(192, 23);
+            this.txtDescriptionM.TabIndex = 14;
+            // 
+            // txtCantidadM
+            // 
+            this.txtCantidadM.Location = new System.Drawing.Point(311, 185);
+            this.txtCantidadM.Name = "txtCantidadM";
+            this.txtCantidadM.Size = new System.Drawing.Size(192, 23);
+            this.txtCantidadM.TabIndex = 13;
+            // 
+            // btnSaveChange
+            // 
+            this.btnSaveChange.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSaveChange.Location = new System.Drawing.Point(252, 218);
+            this.btnSaveChange.Name = "btnSaveChange";
+            this.btnSaveChange.Size = new System.Drawing.Size(145, 35);
+            this.btnSaveChange.TabIndex = 12;
+            this.btnSaveChange.Text = "Guardar Cambios";
+            this.btnSaveChange.UseVisualStyleBackColor = true;
+            this.btnSaveChange.Click += new System.EventHandler(this.btnSaveChange_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(192, 156);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(47, 20);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Valor:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(192, 121);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 20);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Descripción:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(192, 188);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 20);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Cantidad:";
+            // 
+            // btnConsultM
+            // 
+            this.btnConsultM.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultM.Location = new System.Drawing.Point(297, 55);
+            this.btnConsultM.Name = "btnConsultM";
+            this.btnConsultM.Size = new System.Drawing.Size(84, 38);
+            this.btnConsultM.TabIndex = 8;
+            this.btnConsultM.Text = "Consultar";
+            this.btnConsultM.UseVisualStyleBackColor = true;
+            this.btnConsultM.Click += new System.EventHandler(this.btnConsultM_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(153, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 20);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Producto:";
             // 
             // pnlConsultProduct
             // 
@@ -303,155 +452,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Codigo:";
             // 
-            // pnlDelete
-            // 
-            this.pnlDelete.Controls.Add(this.comboBox2);
-            this.pnlDelete.Controls.Add(this.btnDeleteE);
-            this.pnlDelete.Controls.Add(this.label14);
-            this.pnlDelete.Location = new System.Drawing.Point(19, 50);
-            this.pnlDelete.Name = "pnlDelete";
-            this.pnlDelete.Size = new System.Drawing.Size(719, 298);
-            this.pnlDelete.TabIndex = 16;
-            this.pnlDelete.Visible = false;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(240, 16);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(263, 23);
-            this.comboBox2.TabIndex = 17;
-            // 
-            // btnDeleteE
-            // 
-            this.btnDeleteE.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDeleteE.Location = new System.Drawing.Point(297, 55);
-            this.btnDeleteE.Name = "btnDeleteE";
-            this.btnDeleteE.Size = new System.Drawing.Size(84, 38);
-            this.btnDeleteE.TabIndex = 8;
-            this.btnDeleteE.Text = "Eliminar";
-            this.btnDeleteE.UseVisualStyleBackColor = true;
-            this.btnDeleteE.Click += new System.EventHandler(this.btnDeleteE_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(153, 16);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 20);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Producto:";
-            // 
-            // pnlModify
-            // 
-            this.pnlModify.Controls.Add(this.comboBox1);
-            this.pnlModify.Controls.Add(this.txtValueM);
-            this.pnlModify.Controls.Add(this.txtDescriptionM);
-            this.pnlModify.Controls.Add(this.txtCantidadM);
-            this.pnlModify.Controls.Add(this.btnSaveChange);
-            this.pnlModify.Controls.Add(this.label10);
-            this.pnlModify.Controls.Add(this.label8);
-            this.pnlModify.Controls.Add(this.label7);
-            this.pnlModify.Controls.Add(this.btnConsultM);
-            this.pnlModify.Controls.Add(this.label6);
-            this.pnlModify.Location = new System.Drawing.Point(19, 50);
-            this.pnlModify.Name = "pnlModify";
-            this.pnlModify.Size = new System.Drawing.Size(719, 298);
-            this.pnlModify.TabIndex = 10;
-            this.pnlModify.Visible = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(267, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(263, 23);
-            this.comboBox1.TabIndex = 16;
-            // 
-            // txtValueM
-            // 
-            this.txtValueM.Location = new System.Drawing.Point(311, 153);
-            this.txtValueM.Name = "txtValueM";
-            this.txtValueM.Size = new System.Drawing.Size(192, 23);
-            this.txtValueM.TabIndex = 15;
-            // 
-            // txtDescriptionM
-            // 
-            this.txtDescriptionM.Location = new System.Drawing.Point(311, 118);
-            this.txtDescriptionM.Name = "txtDescriptionM";
-            this.txtDescriptionM.Size = new System.Drawing.Size(192, 23);
-            this.txtDescriptionM.TabIndex = 14;
-            // 
-            // txtCantidadM
-            // 
-            this.txtCantidadM.Location = new System.Drawing.Point(311, 185);
-            this.txtCantidadM.Name = "txtCantidadM";
-            this.txtCantidadM.Size = new System.Drawing.Size(192, 23);
-            this.txtCantidadM.TabIndex = 13;
-            // 
-            // btnSaveChange
-            // 
-            this.btnSaveChange.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSaveChange.Location = new System.Drawing.Point(252, 218);
-            this.btnSaveChange.Name = "btnSaveChange";
-            this.btnSaveChange.Size = new System.Drawing.Size(145, 35);
-            this.btnSaveChange.TabIndex = 12;
-            this.btnSaveChange.Text = "Guardar Cambios";
-            this.btnSaveChange.UseVisualStyleBackColor = true;
-            this.btnSaveChange.Click += new System.EventHandler(this.btnSaveChange_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(192, 156);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 20);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Valor:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(192, 121);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 20);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Descripción:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(192, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 20);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Cantidad:";
-            // 
-            // btnConsultM
-            // 
-            this.btnConsultM.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConsultM.Location = new System.Drawing.Point(297, 55);
-            this.btnConsultM.Name = "btnConsultM";
-            this.btnConsultM.Size = new System.Drawing.Size(84, 38);
-            this.btnConsultM.TabIndex = 8;
-            this.btnConsultM.Text = "Consultar";
-            this.btnConsultM.UseVisualStyleBackColor = true;
-            this.btnConsultM.Click += new System.EventHandler(this.btnConsultM_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(153, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 20);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Producto:";
-            // 
             // frmProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -466,15 +466,15 @@
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.pnlDelete.ResumeLayout(false);
+            this.pnlDelete.PerformLayout();
+            this.pnlModify.ResumeLayout(false);
+            this.pnlModify.PerformLayout();
             this.pnlConsultProduct.ResumeLayout(false);
             this.pnlConsultProduct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnlInsert.ResumeLayout(false);
             this.pnlInsert.PerformLayout();
-            this.pnlDelete.ResumeLayout(false);
-            this.pnlDelete.PerformLayout();
-            this.pnlModify.ResumeLayout(false);
-            this.pnlModify.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

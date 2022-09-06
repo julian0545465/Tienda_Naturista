@@ -5,7 +5,7 @@ namespace DataAccess
 {
     public class Connection
     {
-        string cadenaConexion = "Server=Localhost;User=root;Password=julian05;Port=3306;database=scrip";
+        string cadenaConexion = "Server=Localhost;User=root;Password=julian05;Port=3306;database=scrip2";
 
         MySqlConnection mySqlConnection;
 
