@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 3._Bussiness
+namespace Bussiness
 {
-    internal class InvoiceBussiness
-{
-}
+    public class InvoiceBussiness
+    {
+
+
+    }
 }

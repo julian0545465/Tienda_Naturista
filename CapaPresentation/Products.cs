@@ -170,8 +170,9 @@ namespace PresentationLayer
             comboBox2.DataSource = products.Tables[0];
             comboBox2.ValueMember = "Code";
             comboBox2.DisplayMember = "Description";
-        }
 
+
+        } 
         private void btnSaveChange_Click(object sender, EventArgs e)
         {
             if (txtDescriptionM.Text == String.Empty)

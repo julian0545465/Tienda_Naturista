@@ -69,5 +69,15 @@ namespace Bussiness
             return data;
 
         }
+        public DataSet ConsultValue(int code)
+        {
+                connection.Open();
+                DataSet data = new DataSet();
+                data = connection.Consult($"SELECT Value from scrip.products where Code  = {code};");
+                connection.Close();
+                return data;
+
+            
+        }
     }
 }

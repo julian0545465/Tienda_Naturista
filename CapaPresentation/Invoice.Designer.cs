@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Vendedor = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtNumberF = new System.Windows.Forms.TextBox();
-            this.txtAmountF = new System.Windows.Forms.TextBox();
+            this.txtQuantityF = new System.Windows.Forms.TextBox();
             this.txtClientF = new System.Windows.Forms.ComboBox();
             this.txtProductF = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -44,6 +43,7 @@
             this.btnFinishF = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
+            this.comboBoxVendedor = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,15 +57,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Facturación";
             // 
-            // label2
+            // Vendedor
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(101, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Número:";
+            this.Vendedor.AutoSize = true;
+            this.Vendedor.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Vendedor.Location = new System.Drawing.Point(101, 91);
+            this.Vendedor.Name = "Vendedor";
+            this.Vendedor.Size = new System.Drawing.Size(77, 20);
+            this.Vendedor.TabIndex = 1;
+            this.Vendedor.Text = "Vendedor:";
             // 
             // label3
             // 
@@ -106,7 +106,6 @@
             this.label6.Size = new System.Drawing.Size(72, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Cantidad:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // dateTimePicker1
             // 
@@ -115,19 +114,12 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker1.TabIndex = 6;
             // 
-            // txtNumberF
+            // txtQuantityF
             // 
-            this.txtNumberF.Location = new System.Drawing.Point(213, 91);
-            this.txtNumberF.Name = "txtNumberF";
-            this.txtNumberF.Size = new System.Drawing.Size(191, 23);
-            this.txtNumberF.TabIndex = 7;
-            // 
-            // txtAmountF
-            // 
-            this.txtAmountF.Location = new System.Drawing.Point(213, 216);
-            this.txtAmountF.Name = "txtAmountF";
-            this.txtAmountF.Size = new System.Drawing.Size(191, 23);
-            this.txtAmountF.TabIndex = 10;
+            this.txtQuantityF.Location = new System.Drawing.Point(213, 216);
+            this.txtQuantityF.Name = "txtQuantityF";
+            this.txtQuantityF.Size = new System.Drawing.Size(191, 23);
+            this.txtQuantityF.TabIndex = 10;
             // 
             // txtClientF
             // 
@@ -154,6 +146,7 @@
             this.btnAdd.TabIndex = 13;
             this.btnAdd.Text = "Agregar Producto";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dataGridView1
             // 
@@ -191,11 +184,20 @@
             this.txtTotal.Size = new System.Drawing.Size(191, 23);
             this.txtTotal.TabIndex = 17;
             // 
+            // comboBoxVendedor
+            // 
+            this.comboBoxVendedor.FormattingEnabled = true;
+            this.comboBoxVendedor.Location = new System.Drawing.Point(213, 88);
+            this.comboBoxVendedor.Name = "comboBoxVendedor";
+            this.comboBoxVendedor.Size = new System.Drawing.Size(191, 23);
+            this.comboBoxVendedor.TabIndex = 18;
+            // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxVendedor);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnFinishF);
@@ -203,14 +205,13 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtProductF);
             this.Controls.Add(this.txtClientF);
-            this.Controls.Add(this.txtAmountF);
-            this.Controls.Add(this.txtNumberF);
+            this.Controls.Add(this.txtQuantityF);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Vendedor);
             this.Controls.Add(this.label1);
             this.Name = "frmInvoice";
             this.Text = "Invoice";
@@ -224,14 +225,13 @@
         #endregion
 
         private Label label1;
-        private Label label2;
+        private Label Vendedor;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
         private DateTimePicker dateTimePicker1;
-        private TextBox txtNumberF;
-        private TextBox txtAmountF;
+        private TextBox txtQuantityF;
         private ComboBox txtClientF;
         private ComboBox txtProductF;
         private Button btnAdd;
@@ -239,5 +239,6 @@
         private Button btnFinishF;
         private Label label7;
         private TextBox txtTotal;
+        private ComboBox comboBoxVendedor;
     }
 }
