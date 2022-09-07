@@ -37,7 +37,7 @@ namespace PresentationLayer
             seller = sellerBussiness.GetData();
 
             comboBoxVendedor.DataSource = seller.Tables[0];
-            comboBoxVendedor.DisplayMember = "User";
+            comboBoxVendedor.DisplayMember = "IdEmployee";
 
             seller = clientBussiness.GetData();
 
@@ -52,6 +52,17 @@ namespace PresentationLayer
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
+            if (txtClientF.Text != " " && txtProductF.Text != " " && comboBoxVendedor.Text != " " && txtQuantityF.Text != " " && dateTimePicker1.Text != "")
+            {
+                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+                row.Cells[0].Value = comboBoxVendedor.Text;
+                row.Cells[1].Value = txtClientF.Text;
+                row.Cells[2].Value = txtProductF.Text;
+                row.Cells[3].Value = txtQuantityF.Text;
+                row.Cells[4].Value = dateTimePicker1.Text;
+                dataGridView1.Rows.Add(row);
+            }
             //Invoice invoice = new Invoice();
             //Products products = new Products();
 
