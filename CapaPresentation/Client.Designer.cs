@@ -70,6 +70,7 @@
             this.txtSearchC = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btnConsultCliC = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pnlDeleteCli.SuspendLayout();
@@ -489,11 +490,23 @@
             this.btnConsultCliC.UseVisualStyleBackColor = true;
             this.btnConsultCliC.Click += new System.EventHandler(this.btnConsultCliC_Click);
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReturn.Location = new System.Drawing.Point(42, 17);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(93, 37);
+            this.btnReturn.TabIndex = 3;
+            this.btnReturn.Text = "Devolverse";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // frmClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.MainMenuStrip = this.menuStrip1;
@@ -561,5 +574,6 @@
         private Label label11;
         private Button btnConsultCliC;
         private Button btnDeleteC;
+        private Button btnReturn;
     }
 }

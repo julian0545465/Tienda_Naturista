@@ -33,6 +33,7 @@
             this.txtProductI = new System.Windows.Forms.ComboBox();
             this.btnConsultarI = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnReturn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,11 +86,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(658, 216);
             this.dataGridView1.TabIndex = 15;
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReturn.Location = new System.Drawing.Point(25, 15);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(96, 32);
+            this.btnReturn.TabIndex = 16;
+            this.btnReturn.Text = "Devolverse";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // frmInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnConsultarI);
             this.Controls.Add(this.txtProductI);
@@ -110,5 +123,6 @@
         private ComboBox txtProductI;
         private Button btnConsultarI;
         private DataGridView dataGridView1;
+        private Button btnReturn;
     }
 }

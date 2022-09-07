@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entities;
+using Presentation;
 
 namespace PresentationLayer
 {
@@ -75,6 +76,13 @@ namespace PresentationLayer
             //{
             //    TXTTotal.Text = claseEntidad.Valor.ToString();
             //}
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            MainMenu menu = new MainMenu();
+            menu.ShowDialog();
+            this.Close();
         }
     }
 }

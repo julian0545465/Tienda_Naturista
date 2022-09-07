@@ -1,6 +1,7 @@
 ﻿using Bussiness;
 using DataAccess;
 using Entities;
+using Presentation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -235,6 +236,11 @@ namespace PresentationLayer
             }
         }
 
-        
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -44,6 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.comboBoxVendedor = new System.Windows.Forms.ComboBox();
+            this.btnReturn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,11 +193,23 @@
             this.comboBoxVendedor.Size = new System.Drawing.Size(191, 23);
             this.comboBoxVendedor.TabIndex = 18;
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReturn.Location = new System.Drawing.Point(53, 27);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(95, 29);
+            this.btnReturn.TabIndex = 19;
+            this.btnReturn.Text = "Devolverse";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.comboBoxVendedor);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label7);
@@ -240,5 +253,6 @@
         private Label label7;
         private TextBox txtTotal;
         private ComboBox comboBoxVendedor;
+        private Button btnReturn;
     }
 }

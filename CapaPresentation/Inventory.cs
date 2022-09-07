@@ -1,4 +1,5 @@
 ﻿using Bussiness;
+using Presentation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,13 @@ namespace PresentationLayer
             dataGridView1.DataSource = data;
             dataGridView1.DataMember = data.Tables["tbl"].TableName;
             dataGridView1.Update();
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            MainMenu main = new MainMenu();
+            main.ShowDialog();
+            this.Close();
         }
     }
 }
