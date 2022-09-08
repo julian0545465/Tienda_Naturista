@@ -20,7 +20,7 @@ namespace Bussiness
         {
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.employee;");
+            data = connection.Consult($"SELECT * FROM scrip3.employee;");
             connection.Close();
             return data;
 
@@ -30,7 +30,7 @@ namespace Bussiness
         {
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.products WHERE User = {user};");
+            data = connection.Consult($"SELECT * FROM scrip3.employee WHERE User = {user};");
             connection.Close();
             return data;
 

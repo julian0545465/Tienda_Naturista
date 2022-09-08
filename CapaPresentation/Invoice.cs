@@ -21,15 +21,20 @@ namespace PresentationLayer
         ClientBussiness clientBussiness;
         ProductsBussiness productsBussiness;
         DataSet seller;
+        DataSet products= new DataSet();
         public frmInvoice()
         {
             InitializeComponent();
             sellerBussiness = new SellerBussiness();
             productsBussiness = new ProductsBussiness();
             clientBussiness = new ClientBussiness();
+            products.Tables.Add("products");
+            products.Tables[0].Columns.Add("Code");
+            products.Tables[0].Columns.Add("Name");
+            products.Tables[0].Columns.Add("Quantity");
         }
 
-       
+
 
         private void frmInvoice_Load(object sender, EventArgs e)
         {
@@ -37,7 +42,7 @@ namespace PresentationLayer
             seller = sellerBussiness.GetData();
 
             comboBoxVendedor.DataSource = seller.Tables[0];
-            comboBoxVendedor.DisplayMember = "IdEmployee";
+            comboBoxVendedor.DisplayMember = "User";
 
             seller = clientBussiness.GetData();
 
@@ -53,41 +58,58 @@ namespace PresentationLayer
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
-            if (txtClientF.Text != " " && txtProductF.Text != " " && comboBoxVendedor.Text != " " && txtQuantityF.Text != " " && dateTimePicker1.Text != "")
+            Invoice invoice = new Invoice();
+            Products products = new Products();
+            InvoiceBussiness invoiceBussiness = new InvoiceBussiness();
+            products.Code = Convert.ToInt32(txtProductF.SelectedValue.ToString());
+            products.Description = txtProductF.Text;
+            String Cantidad = txtQuantityF.Text;
+            products.Value = invoiceBussiness.ConsultarPrecioFac(products.Code);
+            dataGridView1.Rows.Add(products.Code, products.Description, Cantidad, products.Value);
+            int NumeroFilas = dataGridView1.Rows.Count;
+            int ValorTotal = 0;
+            if (NumeroFilas > 1)
             {
-                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-                row.Cells[0].Value = comboBoxVendedor.Text;
-                row.Cells[1].Value = txtClientF.Text;
-                row.Cells[2].Value = txtProductF.Text;
-                row.Cells[3].Value = txtQuantityF.Text;
-                row.Cells[4].Value = dateTimePicker1.Text;
-                dataGridView1.Rows.Add(row);
+                for (int i = 0; i < (NumeroFilas - 1); i++)
+                {
+                    int Can = Convert.ToInt16(dataGridView1.Rows[i].Cells[2].Value.ToString());
+                    int Val = Convert.ToInt16(dataGridView1.Rows[i].Cells[3].Value.ToString());
+                    ValorTotal += Can * Val;
+                }
+                txtTotal.Text = ValorTotal.ToString();
             }
-            //Invoice invoice = new Invoice();
-            //Products products = new Products();
+            else
+            {
+                txtTotal.Text = products.Value.ToString();
+            }
 
-            //invoice.Code = Convert.ToInt32(txtProductF.SelectedValue.ToString());
-            //products.Description = txtProductF.Text;
-            //String Cantidad = txtQuantityF.Text;
-            //products.Value = productsBussiness.ConsultValue;
-            //DataFact.Rows.Add(claseEntidad.Codigo, claseEntidad.Producto, Cantidad, claseEntidad.Valor);
-            //int NumeroFilas = DataFact.Rows.Count;
-            //int ValorTotal = 0;
-            //if (NumeroFilas > 1)
-            //{
-            //    for (int i = 0; i < (NumeroFilas - 1); i++)
-            //    {
-            //        int Can = Convert.ToInt16(DataFact.Rows[i].Cells[2].Value.ToString());
-            //        int Val = Convert.ToInt16(DataFact.Rows[i].Cells[3].Value.ToString());
-            //        ValorTotal += Can * Val;
-            //    }
-            //    TXTTotal.Text = ValorTotal.ToString();
-            //}
-            //else
-            //{
-            //    TXTTotal.Text = claseEntidad.Valor.ToString();
-            //}
         }
+
+        //int selectedIndex = txtProductF.SelectedIndex;
+        //var product = products.Tables[0].Rows[selectedIndex];
+
+        //DataSet data = productsBussiness.GetDataProduct(int.Parse(product["Code"].ToString()));
+
+        //dataGridView1.Columns.Add("Code", "Código");
+        //DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+        //DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+        //    row.Cells[0].Value = comboBoxVendedor.Text;
+        //    row.Cells[1].Value = txtClientF.Text;
+        //    row.Cells[2].Value = txtProductF.Text;
+        //    row.Cells[3].Value = txtQuantityF.Text;
+        //    row.Cells[4].Value = dateTimePicker1.Text;
+        //    dataGridView1.Rows.Add(row);
+
+        //data.Tables[0].Columns
+        //products.Tables[0].Rows.Add( );
+        //product.Table
+        //products.Tables[0].Rows.
+        //DataSet data = productsBussiness.GetDataProduct(int.Parse(this.products["Code"].ToString()));
+        //dataGridView1.DataSource = data;
+        //dataGridView1.DataMember = data.Tables["tbl"].TableName;
+        //dataGridView1.Update();
+
+
 
         private void btnReturn_Click(object sender, EventArgs e)
         {

@@ -20,7 +20,7 @@ namespace Bussiness
         {
 
             connection.Open();
-            bool state = connection.Execute($"INSERT INTO `scrip`.`client`(`Document`,`Name`,`Address`,`Numberphone`, `Email`)VALUES('{client.Document}', '{client.Name}', '{client.Address}', '{client.Numberphone}', '{client.Email}');");
+            bool state = connection.Execute($"INSERT INTO `scrip3`.`cliente`(`Document`,`Name`,`Address`,`Numberphone`, `Email`)VALUES('{client.Document}', '{client.Name}', '{client.Address}', '{client.Numberphone}', '{client.Email}');");
             connection.Close();
             return state;
             
@@ -31,7 +31,7 @@ namespace Bussiness
         {
 
             connection.Open();
-            bool state = connection.Execute($"update `scrip`.`client` set Document='{client.Document}',Name='{client.Name}',Address='{client.Address}',Numberphone='{client.Numberphone}',Email='{client.Email}' WHERE DOCUMENT= {client.Document};");
+            bool state = connection.Execute($"update `scrip3`.`cliente` set Document='{client.Document}',Name='{client.Name}',Address='{client.Address}',Numberphone='{client.Numberphone}',Email='{client.Email}' WHERE DOCUMENT= {client.Document};");
             connection.Close();
             return state;
            
@@ -41,7 +41,7 @@ namespace Bussiness
         {
 
             connection.Open();
-            bool state = connection.Execute($"delete FROM`scrip`.`client` WHERE DOCUMENT= '{document}';");
+            bool state = connection.Execute($"delete FROM`scrip3`.`cliente` WHERE DOCUMENT= '{document}';");
             connection.Close();
             return state;
             //DELETE FROM `scrip`.`client` WHERE(`Document` = '12');
@@ -52,7 +52,7 @@ namespace Bussiness
         {
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.client;");
+            data = connection.Consult($"SELECT * FROM scrip3.cliente;");
             connection.Close();
             return data;
 
@@ -62,7 +62,7 @@ namespace Bussiness
         {
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.client WHERE DOCUMENT = '{document}';");
+            data = connection.Consult($"SELECT * FROM scrip3.cliente WHERE DOCUMENT = '{document}';");
             connection.Close();
             return data;
 

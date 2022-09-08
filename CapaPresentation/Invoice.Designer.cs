@@ -145,7 +145,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(173, 25);
             this.btnAdd.TabIndex = 13;
-            this.btnAdd.Text = "Agregar Producto";
+            this.btnAdd.Text = " Agregar producto";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 

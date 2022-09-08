@@ -24,7 +24,7 @@ namespace Bussiness
         {
 
             connection.Open();
-            bool state = connection.Execute($"INSERT INTO `scrip`.`products`(`Code`,`Description`,`Value`,`Quantity`)VALUES({products.Code}, '{products.Description}', {products.Value}, {products.Quantity});");
+            bool state = connection.Execute($"INSERT INTO `scrip3`.`products`(`Code`,`Description`,`Value`,`Quantity`)VALUES({products.Code}, '{products.Description}', {products.Value}, {products.Quantity});");
             connection.Close();
             return state;
 
@@ -34,7 +34,7 @@ namespace Bussiness
         {
 
             connection.Open();
-            bool state = connection.Execute($"update `scrip`.`products` set Quantity={products.Quantity},Description='{products.Description}',Value={products.Value} WHERE CODE= {products.Code};");
+            bool state = connection.Execute($"update `scrip3`.`products` set Quantity={products.Quantity},Description='{products.Description}',Value={products.Value} WHERE CODE= {products.Code};");
             connection.Close();
             return state;
 
@@ -44,7 +44,7 @@ namespace Bussiness
         {
 
             connection.Open();
-            bool state = connection.Execute($"delete FROM`scrip`.`products` WHERE CODE= {code};");
+            bool state = connection.Execute($"delete FROM`scrip3`.`products` WHERE CODE= {code};");
             connection.Close();
             return state;
 
@@ -54,7 +54,7 @@ namespace Bussiness
         {
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.products;");
+            data = connection.Consult($"SELECT * FROM scrip3.products;");
             connection.Close();
             return data;
 
@@ -64,7 +64,7 @@ namespace Bussiness
         {
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.products WHERE CODE = {code};");
+            data = connection.Consult($"SELECT * FROM scrip3.products WHERE CODE = {code};");
             connection.Close();
             return data;
 
@@ -73,7 +73,7 @@ namespace Bussiness
         {
                 connection.Open();
                 DataSet data = new DataSet();
-                data = connection.Consult($"SELECT Value from scrip.products where Code  = {code};");
+                data = connection.Consult($"SELECT Value from scrip3.products where Code  = {code};");
                 connection.Close();
                 return data;
 

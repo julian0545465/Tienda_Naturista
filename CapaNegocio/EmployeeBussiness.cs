@@ -17,7 +17,7 @@ namespace Bussiness
             
             connection.Open();
             DataSet data = new DataSet();
-            data = connection.Consult($"SELECT * FROM scrip.employee WHERE USER='{employee.User}' AND PASSWORD='{employee.Password}';");
+            data = connection.Consult($"SELECT * FROM scrip3.employee WHERE USER='{employee.User}' AND PASSWORD='{employee.Password}';");
             connection.Close();
             if (data.Tables[0].Rows.Count > 0)
             {
