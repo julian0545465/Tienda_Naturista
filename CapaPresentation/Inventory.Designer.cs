@@ -32,9 +32,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtProductI = new System.Windows.Forms.ComboBox();
             this.btnConsultarI = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewIn = new System.Windows.Forms.DataGridView();
             this.btnReturn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIn)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,14 +77,14 @@
             this.btnConsultarI.UseVisualStyleBackColor = true;
             this.btnConsultarI.Click += new System.EventHandler(this.btnConsultarI_Click);
             // 
-            // dataGridView1
+            // dataGridViewIn
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(80, 187);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(658, 216);
-            this.dataGridView1.TabIndex = 15;
+            this.dataGridViewIn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewIn.Location = new System.Drawing.Point(80, 187);
+            this.dataGridViewIn.Name = "dataGridViewIn";
+            this.dataGridViewIn.RowTemplate.Height = 25;
+            this.dataGridViewIn.Size = new System.Drawing.Size(658, 216);
+            this.dataGridViewIn.TabIndex = 15;
             // 
             // btnReturn
             // 
@@ -103,14 +103,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewIn);
             this.Controls.Add(this.btnConsultarI);
             this.Controls.Add(this.txtProductI);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Name = "frmInventory";
             this.Text = "Inventory";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,7 +122,7 @@
         private Label label5;
         private ComboBox txtProductI;
         private Button btnConsultarI;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewIn;
         private Button btnReturn;
     }
 }

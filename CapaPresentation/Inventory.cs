@@ -15,22 +15,23 @@ namespace PresentationLayer
     public partial class frmInventory : Form
     {
         DataSet inventory;
-        ProductsBussiness productsBussiness;
+        InventoryBussiness inventoryBussiness;
         public frmInventory()
         {
             InitializeComponent();
-            productsBussiness = new ProductsBussiness();
+            inventoryBussiness = new InventoryBussiness();
         }
 
         private void btnConsultarI_Click(object sender, EventArgs e)
         {
-            int selectedIndex = txtProductI.SelectedIndex;
-            var product = inventory.Tables[0].Rows[selectedIndex];
 
-            DataSet data = productsBussiness.GetDataProduct(int.Parse(product["Code"].ToString()));
-            dataGridView1.DataSource = data;
-            dataGridView1.DataMember = data.Tables["tbl"].TableName;
-            dataGridView1.Update();
+            int selectedIndex = txtProductI.SelectedIndex;
+            var inven = inventory.Tables[0].Rows[selectedIndex];
+
+            DataSet data = inventoryBussiness.GetDataProduct(int.Parse(inven["Code"].ToString()));
+            dataGridViewIn.DataSource = data;
+            dataGridViewIn.DataMember = data.Tables["tbl"].TableName;
+            dataGridViewIn.Update();
         }
 
         private void btnReturn_Click(object sender, EventArgs e)

@@ -38,21 +38,26 @@ namespace PresentationLayer
 
         private void frmInvoice_Load(object sender, EventArgs e)
         {
-
+            txtQuantityF.Text = "1";
             seller = sellerBussiness.GetData();
 
             comboBoxVendedor.DataSource = seller.Tables[0];
             comboBoxVendedor.DisplayMember = "User";
+            comboBoxVendedor.ValueMember = "IdEmployee";
+
 
             seller = clientBussiness.GetData();
 
             txtClientF.DataSource = seller.Tables[0];
             txtClientF.DisplayMember = "Name";
+            txtClientF.ValueMember = "Document";
+
 
             seller = productsBussiness.GetData();
 
             txtProductF.DataSource = seller.Tables[0];
             txtProductF.DisplayMember = "Description";
+            txtProductF.ValueMember = "Code";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
