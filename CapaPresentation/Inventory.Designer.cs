@@ -80,10 +80,10 @@
             // dataGridViewIn
             // 
             this.dataGridViewIn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewIn.Location = new System.Drawing.Point(80, 187);
+            this.dataGridViewIn.Location = new System.Drawing.Point(162, 181);
             this.dataGridViewIn.Name = "dataGridViewIn";
             this.dataGridViewIn.RowTemplate.Height = 25;
-            this.dataGridViewIn.Size = new System.Drawing.Size(658, 216);
+            this.dataGridViewIn.Size = new System.Drawing.Size(493, 110);
             this.dataGridViewIn.TabIndex = 15;
             // 
             // btnReturn
@@ -110,6 +110,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmInventory";
             this.Text = "Inventory";
+            this.Load += new System.EventHandler(this.frmInventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

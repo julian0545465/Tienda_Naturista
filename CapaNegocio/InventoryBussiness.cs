@@ -16,6 +16,16 @@ namespace Bussiness
             connection = new Connection();
         }
 
+        public DataSet GetData()
+        {
+            connection.Open();
+            DataSet data = new DataSet();
+            data = connection.Consult($"SELECT * FROM scrip3.products;");
+            connection.Close();
+            return data;
+
+        }
+
         public DataSet GetDataProduct(int code)
         {
             connection.Open();

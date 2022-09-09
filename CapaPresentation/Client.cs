@@ -244,9 +244,9 @@ namespace Presentation
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MainMenu mainMenu = new MainMenu();
             mainMenu.ShowDialog();
-            this.Close();
         }
     }
 }

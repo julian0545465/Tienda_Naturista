@@ -36,9 +36,18 @@ namespace PresentationLayer
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MainMenu main = new MainMenu();
             main.ShowDialog();
-            this.Close();
+        }
+
+        private void frmInventory_Load(object sender, EventArgs e)
+        {
+            inventory = inventoryBussiness.GetData();
+
+            txtProductI.DataSource = inventory.Tables[0];
+            txtProductI.ValueMember = "Description";
+            txtProductI.DisplayMember = "Code";
         }
     }
 }

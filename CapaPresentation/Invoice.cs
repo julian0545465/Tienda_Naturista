@@ -63,22 +63,23 @@ namespace PresentationLayer
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
+
             Invoice invoice = new Invoice();
             Products products = new Products();
             InvoiceBussiness invoiceBussiness = new InvoiceBussiness();
             products.Code = Convert.ToInt32(txtProductF.SelectedValue.ToString());
             products.Description = txtProductF.Text;
             String Cantidad = txtQuantityF.Text;
-            products.Value = invoiceBussiness.ConsultarPrecioFac(products.Code);
-            dataGridView1.Rows.Add(products.Code, products.Description, Cantidad, products.Value);
-            int NumeroFilas = dataGridView1.Rows.Count;
+            products.Value = invoiceBussiness.PriceInvoice(products.Code);
+            dataGridView2.Rows.Add(products.Code, products.Description, Cantidad, products.Value);
+            int NumeroFilas = dataGridView2.Rows.Count;
             int ValorTotal = 0;
             if (NumeroFilas > 1)
             {
                 for (int i = 0; i < (NumeroFilas - 1); i++)
                 {
-                    int Can = Convert.ToInt16(dataGridView1.Rows[i].Cells[2].Value.ToString());
-                    int Val = Convert.ToInt16(dataGridView1.Rows[i].Cells[3].Value.ToString());
+                    int Can = Convert.ToInt16(dataGridView2.Rows[i].Cells[2].Value.ToString());
+                    int Val = Convert.ToInt16(dataGridView2.Rows[i].Cells[3].Value.ToString());
                     ValorTotal += Can * Val;
                 }
                 txtTotal.Text = ValorTotal.ToString();
@@ -118,9 +119,9 @@ namespace PresentationLayer
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MainMenu menu = new MainMenu();
             menu.ShowDialog();
-            this.Close();
         }
     }
 }

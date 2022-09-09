@@ -10,15 +10,15 @@ namespace Bussiness
 {
     public class InvoiceBussiness
     {
-        public int ConsultarPrecioFac(int Codigo)
+        public int PriceInvoice(int Code)
         {
-            string cadenaConexion = "Server=Localhost;User=root;Password=julian05;Port=3306;database=scrip3";
+            string cadenaConexion = "Server=Localhost;User=root;Password=admin;Port=3306;database=scrip3";
 
             int Precio = 0;
             DataTable tabla = new DataTable();
             try
             {
-                using (var adaptador = new MySqlDataAdapter("select Value from products where Code=" + Codigo, cadenaConexion))
+                using (var adaptador = new MySqlDataAdapter("select Value from scrip3.products where Code=" + Code, cadenaConexion))
                 {
                     adaptador.SelectCommand.CommandType = CommandType.Text;
                     adaptador.Fill(tabla);

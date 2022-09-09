@@ -41,5 +41,11 @@ namespace Presentation
             frmClient frmclient = new frmClient();
             frmclient.ShowDialog();
         }
+
+        private void vendedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Seller seller = new Seller();
+            seller.ShowDialog();
+        }
     }
 }
