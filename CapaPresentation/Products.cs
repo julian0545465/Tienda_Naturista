@@ -227,6 +227,7 @@ namespace PresentationLayer
           
             if (remove)
             {
+                if (MessageBox.Show("¿Desea eliminar el registro?", "Titulo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 loadComboDelete();
                 MessageBox.Show("Registro Eliminado");
             }

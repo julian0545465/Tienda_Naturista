@@ -90,10 +90,10 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.menuStrip1);
-            this.groupBox1.Controls.Add(this.pnlConsultProduct);
-            this.groupBox1.Controls.Add(this.pnlInsert);
             this.groupBox1.Controls.Add(this.pnlDelete);
             this.groupBox1.Controls.Add(this.pnlModify);
+            this.groupBox1.Controls.Add(this.pnlConsultProduct);
+            this.groupBox1.Controls.Add(this.pnlInsert);
             this.groupBox1.Location = new System.Drawing.Point(12, 131);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(782, 360);

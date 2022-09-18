@@ -35,23 +35,6 @@
             this.consultarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlDeleteCli = new System.Windows.Forms.Panel();
-            this.btnDeleteC = new System.Windows.Forms.Button();
-            this.comboBoxDelete = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.pnlModifyClient = new System.Windows.Forms.Panel();
-            this.txtEmailCliM = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnSaveChangeCliM = new System.Windows.Forms.Button();
-            this.txtNumberphoneCliM = new System.Windows.Forms.TextBox();
-            this.txtAddressCliM = new System.Windows.Forms.TextBox();
-            this.txtNameCliM = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.comboBoxModify = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnConsultCliM = new System.Windows.Forms.Button();
             this.pnlInsertClient = new System.Windows.Forms.Panel();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -70,14 +53,31 @@
             this.txtSearchC = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btnConsultCliC = new System.Windows.Forms.Button();
+            this.pnlDeleteCli = new System.Windows.Forms.Panel();
+            this.btnDeleteC = new System.Windows.Forms.Button();
+            this.comboBoxDelete = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pnlModifyClient = new System.Windows.Forms.Panel();
+            this.txtEmailCliM = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnSaveChangeCliM = new System.Windows.Forms.Button();
+            this.txtNumberphoneCliM = new System.Windows.Forms.TextBox();
+            this.txtAddressCliM = new System.Windows.Forms.TextBox();
+            this.txtNameCliM = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBoxModify = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnConsultCliM = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.pnlDeleteCli.SuspendLayout();
-            this.pnlModifyClient.SuspendLayout();
             this.pnlInsertClient.SuspendLayout();
             this.pnlConsultClient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCli)).BeginInit();
+            this.pnlDeleteCli.SuspendLayout();
+            this.pnlModifyClient.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -148,172 +148,6 @@
             this.eliminarClienteToolStripMenuItem.Size = new System.Drawing.Size(125, 24);
             this.eliminarClienteToolStripMenuItem.Text = "Eliminar Cliente";
             this.eliminarClienteToolStripMenuItem.Click += new System.EventHandler(this.eliminarClienteToolStripMenuItem_Click);
-            // 
-            // pnlDeleteCli
-            // 
-            this.pnlDeleteCli.Controls.Add(this.btnDeleteC);
-            this.pnlDeleteCli.Controls.Add(this.comboBoxDelete);
-            this.pnlDeleteCli.Controls.Add(this.label16);
-            this.pnlDeleteCli.Location = new System.Drawing.Point(17, 50);
-            this.pnlDeleteCli.Name = "pnlDeleteCli";
-            this.pnlDeleteCli.Size = new System.Drawing.Size(746, 318);
-            this.pnlDeleteCli.TabIndex = 35;
-            // 
-            // btnDeleteC
-            // 
-            this.btnDeleteC.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDeleteC.Location = new System.Drawing.Point(276, 60);
-            this.btnDeleteC.Name = "btnDeleteC";
-            this.btnDeleteC.Size = new System.Drawing.Size(84, 37);
-            this.btnDeleteC.TabIndex = 27;
-            this.btnDeleteC.Text = "Eliminar";
-            this.btnDeleteC.UseVisualStyleBackColor = true;
-            this.btnDeleteC.Click += new System.EventHandler(this.btnDeleteC_Click);
-            // 
-            // comboBoxDelete
-            // 
-            this.comboBoxDelete.FormattingEnabled = true;
-            this.comboBoxDelete.Location = new System.Drawing.Point(275, 13);
-            this.comboBoxDelete.Name = "comboBoxDelete";
-            this.comboBoxDelete.Size = new System.Drawing.Size(263, 23);
-            this.comboBoxDelete.TabIndex = 26;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(161, 17);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(55, 20);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "Cliente";
-            // 
-            // pnlModifyClient
-            // 
-            this.pnlModifyClient.Controls.Add(this.txtEmailCliM);
-            this.pnlModifyClient.Controls.Add(this.label7);
-            this.pnlModifyClient.Controls.Add(this.btnSaveChangeCliM);
-            this.pnlModifyClient.Controls.Add(this.txtNumberphoneCliM);
-            this.pnlModifyClient.Controls.Add(this.txtAddressCliM);
-            this.pnlModifyClient.Controls.Add(this.txtNameCliM);
-            this.pnlModifyClient.Controls.Add(this.label8);
-            this.pnlModifyClient.Controls.Add(this.label10);
-            this.pnlModifyClient.Controls.Add(this.label12);
-            this.pnlModifyClient.Controls.Add(this.comboBoxModify);
-            this.pnlModifyClient.Controls.Add(this.label9);
-            this.pnlModifyClient.Controls.Add(this.btnConsultCliM);
-            this.pnlModifyClient.Location = new System.Drawing.Point(17, 50);
-            this.pnlModifyClient.Name = "pnlModifyClient";
-            this.pnlModifyClient.Size = new System.Drawing.Size(746, 318);
-            this.pnlModifyClient.TabIndex = 21;
-            // 
-            // txtEmailCliM
-            // 
-            this.txtEmailCliM.Location = new System.Drawing.Point(392, 203);
-            this.txtEmailCliM.Name = "txtEmailCliM";
-            this.txtEmailCliM.Size = new System.Drawing.Size(126, 23);
-            this.txtEmailCliM.TabIndex = 34;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(234, 206);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 20);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "Email:";
-            // 
-            // btnSaveChangeCliM
-            // 
-            this.btnSaveChangeCliM.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSaveChangeCliM.Location = new System.Drawing.Point(296, 228);
-            this.btnSaveChangeCliM.Name = "btnSaveChangeCliM";
-            this.btnSaveChangeCliM.Size = new System.Drawing.Size(145, 35);
-            this.btnSaveChangeCliM.TabIndex = 22;
-            this.btnSaveChangeCliM.Text = "Guardar Cambios";
-            this.btnSaveChangeCliM.UseVisualStyleBackColor = true;
-            this.btnSaveChangeCliM.Click += new System.EventHandler(this.btnSaveChangeCliM_Click);
-            // 
-            // txtNumberphoneCliM
-            // 
-            this.txtNumberphoneCliM.Location = new System.Drawing.Point(392, 165);
-            this.txtNumberphoneCliM.Name = "txtNumberphoneCliM";
-            this.txtNumberphoneCliM.Size = new System.Drawing.Size(126, 23);
-            this.txtNumberphoneCliM.TabIndex = 32;
-            // 
-            // txtAddressCliM
-            // 
-            this.txtAddressCliM.Location = new System.Drawing.Point(392, 131);
-            this.txtAddressCliM.Name = "txtAddressCliM";
-            this.txtAddressCliM.Size = new System.Drawing.Size(126, 23);
-            this.txtAddressCliM.TabIndex = 31;
-            // 
-            // txtNameCliM
-            // 
-            this.txtNameCliM.Location = new System.Drawing.Point(392, 95);
-            this.txtNameCliM.Name = "txtNameCliM";
-            this.txtNameCliM.Size = new System.Drawing.Size(126, 23);
-            this.txtNameCliM.TabIndex = 30;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(234, 168);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 20);
-            this.label8.TabIndex = 29;
-            this.label8.Text = "Telefono:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(234, 94);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 20);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Nombre:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(234, 130);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 20);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "Direccion:";
-            // 
-            // comboBoxModify
-            // 
-            this.comboBoxModify.FormattingEnabled = true;
-            this.comboBoxModify.Location = new System.Drawing.Point(275, 13);
-            this.comboBoxModify.Name = "comboBoxModify";
-            this.comboBoxModify.Size = new System.Drawing.Size(263, 23);
-            this.comboBoxModify.TabIndex = 26;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(161, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 20);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Cliente";
-            // 
-            // btnConsultCliM
-            // 
-            this.btnConsultCliM.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConsultCliM.Location = new System.Drawing.Point(318, 50);
-            this.btnConsultCliM.Name = "btnConsultCliM";
-            this.btnConsultCliM.Size = new System.Drawing.Size(84, 38);
-            this.btnConsultCliM.TabIndex = 18;
-            this.btnConsultCliM.Text = "Consultar";
-            this.btnConsultCliM.UseVisualStyleBackColor = true;
-            this.btnConsultCliM.Click += new System.EventHandler(this.btnConsultCliM_Click);
             // 
             // pnlInsertClient
             // 
@@ -490,6 +324,172 @@
             this.btnConsultCliC.UseVisualStyleBackColor = true;
             this.btnConsultCliC.Click += new System.EventHandler(this.btnConsultCliC_Click);
             // 
+            // pnlDeleteCli
+            // 
+            this.pnlDeleteCli.Controls.Add(this.btnDeleteC);
+            this.pnlDeleteCli.Controls.Add(this.comboBoxDelete);
+            this.pnlDeleteCli.Controls.Add(this.label16);
+            this.pnlDeleteCli.Location = new System.Drawing.Point(17, 50);
+            this.pnlDeleteCli.Name = "pnlDeleteCli";
+            this.pnlDeleteCli.Size = new System.Drawing.Size(746, 318);
+            this.pnlDeleteCli.TabIndex = 35;
+            // 
+            // btnDeleteC
+            // 
+            this.btnDeleteC.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDeleteC.Location = new System.Drawing.Point(276, 60);
+            this.btnDeleteC.Name = "btnDeleteC";
+            this.btnDeleteC.Size = new System.Drawing.Size(84, 37);
+            this.btnDeleteC.TabIndex = 27;
+            this.btnDeleteC.Text = "Eliminar";
+            this.btnDeleteC.UseVisualStyleBackColor = true;
+            this.btnDeleteC.Click += new System.EventHandler(this.btnDeleteC_Click);
+            // 
+            // comboBoxDelete
+            // 
+            this.comboBoxDelete.FormattingEnabled = true;
+            this.comboBoxDelete.Location = new System.Drawing.Point(275, 13);
+            this.comboBoxDelete.Name = "comboBoxDelete";
+            this.comboBoxDelete.Size = new System.Drawing.Size(263, 23);
+            this.comboBoxDelete.TabIndex = 26;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(161, 17);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(55, 20);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "Cliente";
+            // 
+            // pnlModifyClient
+            // 
+            this.pnlModifyClient.Controls.Add(this.txtEmailCliM);
+            this.pnlModifyClient.Controls.Add(this.label7);
+            this.pnlModifyClient.Controls.Add(this.btnSaveChangeCliM);
+            this.pnlModifyClient.Controls.Add(this.txtNumberphoneCliM);
+            this.pnlModifyClient.Controls.Add(this.txtAddressCliM);
+            this.pnlModifyClient.Controls.Add(this.txtNameCliM);
+            this.pnlModifyClient.Controls.Add(this.label8);
+            this.pnlModifyClient.Controls.Add(this.label10);
+            this.pnlModifyClient.Controls.Add(this.label12);
+            this.pnlModifyClient.Controls.Add(this.comboBoxModify);
+            this.pnlModifyClient.Controls.Add(this.label9);
+            this.pnlModifyClient.Controls.Add(this.btnConsultCliM);
+            this.pnlModifyClient.Location = new System.Drawing.Point(17, 50);
+            this.pnlModifyClient.Name = "pnlModifyClient";
+            this.pnlModifyClient.Size = new System.Drawing.Size(746, 318);
+            this.pnlModifyClient.TabIndex = 21;
+            // 
+            // txtEmailCliM
+            // 
+            this.txtEmailCliM.Location = new System.Drawing.Point(392, 203);
+            this.txtEmailCliM.Name = "txtEmailCliM";
+            this.txtEmailCliM.Size = new System.Drawing.Size(126, 23);
+            this.txtEmailCliM.TabIndex = 34;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(234, 206);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 20);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Email:";
+            // 
+            // btnSaveChangeCliM
+            // 
+            this.btnSaveChangeCliM.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSaveChangeCliM.Location = new System.Drawing.Point(296, 228);
+            this.btnSaveChangeCliM.Name = "btnSaveChangeCliM";
+            this.btnSaveChangeCliM.Size = new System.Drawing.Size(145, 35);
+            this.btnSaveChangeCliM.TabIndex = 22;
+            this.btnSaveChangeCliM.Text = "Guardar Cambios";
+            this.btnSaveChangeCliM.UseVisualStyleBackColor = true;
+            this.btnSaveChangeCliM.Click += new System.EventHandler(this.btnSaveChangeCliM_Click);
+            // 
+            // txtNumberphoneCliM
+            // 
+            this.txtNumberphoneCliM.Location = new System.Drawing.Point(392, 165);
+            this.txtNumberphoneCliM.Name = "txtNumberphoneCliM";
+            this.txtNumberphoneCliM.Size = new System.Drawing.Size(126, 23);
+            this.txtNumberphoneCliM.TabIndex = 32;
+            // 
+            // txtAddressCliM
+            // 
+            this.txtAddressCliM.Location = new System.Drawing.Point(392, 131);
+            this.txtAddressCliM.Name = "txtAddressCliM";
+            this.txtAddressCliM.Size = new System.Drawing.Size(126, 23);
+            this.txtAddressCliM.TabIndex = 31;
+            // 
+            // txtNameCliM
+            // 
+            this.txtNameCliM.Location = new System.Drawing.Point(392, 95);
+            this.txtNameCliM.Name = "txtNameCliM";
+            this.txtNameCliM.Size = new System.Drawing.Size(126, 23);
+            this.txtNameCliM.TabIndex = 30;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(234, 168);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(71, 20);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Telefono:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(234, 94);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 20);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Nombre:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(234, 130);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(75, 20);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Direccion:";
+            // 
+            // comboBoxModify
+            // 
+            this.comboBoxModify.FormattingEnabled = true;
+            this.comboBoxModify.Location = new System.Drawing.Point(275, 13);
+            this.comboBoxModify.Name = "comboBoxModify";
+            this.comboBoxModify.Size = new System.Drawing.Size(263, 23);
+            this.comboBoxModify.TabIndex = 26;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(161, 17);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 20);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Cliente";
+            // 
+            // btnConsultCliM
+            // 
+            this.btnConsultCliM.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultCliM.Location = new System.Drawing.Point(318, 50);
+            this.btnConsultCliM.Name = "btnConsultCliM";
+            this.btnConsultCliM.Size = new System.Drawing.Size(84, 38);
+            this.btnConsultCliM.TabIndex = 18;
+            this.btnConsultCliM.Text = "Consultar";
+            this.btnConsultCliM.UseVisualStyleBackColor = true;
+            this.btnConsultCliM.Click += new System.EventHandler(this.btnConsultCliM_Click);
+            // 
             // btnReturn
             // 
             this.btnReturn.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -516,15 +516,15 @@
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.pnlDeleteCli.ResumeLayout(false);
-            this.pnlDeleteCli.PerformLayout();
-            this.pnlModifyClient.ResumeLayout(false);
-            this.pnlModifyClient.PerformLayout();
             this.pnlInsertClient.ResumeLayout(false);
             this.pnlInsertClient.PerformLayout();
             this.pnlConsultClient.ResumeLayout(false);
             this.pnlConsultClient.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCli)).EndInit();
+            this.pnlDeleteCli.ResumeLayout(false);
+            this.pnlDeleteCli.PerformLayout();
+            this.pnlModifyClient.ResumeLayout(false);
+            this.pnlModifyClient.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

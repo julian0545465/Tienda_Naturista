@@ -163,6 +163,7 @@
             this.btnFinishF.TabIndex = 15;
             this.btnFinishF.Text = "Terminar Factura";
             this.btnFinishF.UseVisualStyleBackColor = true;
+       
             // 
             // label7
             // 

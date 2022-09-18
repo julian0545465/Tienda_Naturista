@@ -122,7 +122,7 @@ namespace PresentationLayer
             this.Hide();
             MainMenu menu = new MainMenu();
             menu.ShowDialog();
-        }
+        }     
     }
 }
 

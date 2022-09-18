@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using DataAccess;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,9 +11,15 @@ namespace Bussiness
 {
     public class InvoiceBussiness
     {
+        Connection connection;
+        public InvoiceBussiness()
+        {
+             connection = new Connection();
+
+        }
         public int PriceInvoice(int Code)
         {
-            string cadenaConexion = "Server=Localhost;User=root;Password=admin;Port=3306;database=scrip3";
+            string cadenaConexion = "Server=Localhost;User=root;Password=julian05;Port=3306;database=scrip3";
 
             int Precio = 0;
             DataTable tabla = new DataTable();
